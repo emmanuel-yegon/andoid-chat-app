@@ -79,7 +79,7 @@
             android:id="@+id/textCreateNewAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
             android:text="@string/create_new_account"
             android:textColor="@color/primary"
             android:textSize="@dimen/_13ssp"
