@@ -1,11 +1,10 @@
 package com.emmanuel_yegon.chatapp.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.emmanuel_yegon.chatapp.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.emmanuel_yegon.chatapp.databinding.ActivitySignInBinding;
 
 public class SignInActivity extends AppCompatActivity {
@@ -20,8 +19,10 @@ public class SignInActivity extends AppCompatActivity {
         setListeners();
     }
 
-    private void setListeners(){
-        binding.textCreateNewAccount.setOnClickListener(v->
+    private void setListeners() {
+        binding.textCreateNewAccount.setOnClickListener(v ->
                 startActivity(new Intent(getApplicationContext(), SignUpActivity.class)));
+
     }
+
 }

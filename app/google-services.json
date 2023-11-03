@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "250442411810",
+    "project_id": "chatapp-8bce3",
+    "storage_bucket": "chatapp-8bce3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250442411810:android:6bb3a8138979e520b0bf7b",
+        "android_client_info": {
+          "package_name": "com.emmanuel_yegon.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcPY39ev4NTqa6KyNNQKXm2tCbWeISnAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
