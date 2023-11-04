@@ -1,8 +1,10 @@
-package com.emmanuel_yegon.chatapp;
+package com.emmanuel_yegon.chatapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.emmanuel_yegon.chatapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
