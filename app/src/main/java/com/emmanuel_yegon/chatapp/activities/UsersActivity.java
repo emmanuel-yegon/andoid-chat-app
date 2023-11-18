@@ -18,7 +18,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UsersActivity extends AppCompatActivity  implements UserListener {
+public class UsersActivity extends AppCompatActivity implements UserListener {
 
     private ActivityUsersBinding binding;
     private PreferenceManager preferenceManager;
@@ -33,8 +33,8 @@ public class UsersActivity extends AppCompatActivity  implements UserListener {
         getUsers();
     }
 
-    private void setListeners(){
-        binding.imageBack.setOnClickListener(v-> onBackPressed());
+    private void setListeners() {
+        binding.imageBack.setOnClickListener(v -> onBackPressed());
     }
 
     private void getUsers() {
@@ -56,6 +56,7 @@ public class UsersActivity extends AppCompatActivity  implements UserListener {
                             user.email = queryDocumentSnapshot.getString(Constants.KEY_EMAIL);
                             user.image = queryDocumentSnapshot.getString(Constants.KEY_IMAGE);
                             user.token = queryDocumentSnapshot.getString(Constants.KEY_FCM_TOKEN);
+                            user.id = queryDocumentSnapshot.getId();
                             users.add(user);
                         }
                         if (users.size() > 0) {
@@ -85,9 +86,9 @@ public class UsersActivity extends AppCompatActivity  implements UserListener {
     }
 
     @Override
-    public void onUserClicked(User user){
+    public void onUserClicked(User user) {
         Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
-        intent.putExtra(Constants.KEY_USER,user);
+        intent.putExtra(Constants.KEY_USER, user);
         startActivity(intent);
         finish();
     }
