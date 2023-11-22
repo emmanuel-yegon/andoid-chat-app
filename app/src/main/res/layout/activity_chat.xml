@@ -16,6 +16,7 @@
         android:background="@drawable/background_content_top"
         app:layout_constraintBottom_toTopOf="@id/layoutSend"
         app:layout_constraintTop_toTopOf="parent" />
+
     <View
         android:id="@+id/headerBackground"
         android:layout_width="match_parent"
@@ -75,19 +76,6 @@
         android:background="@color/primary"
         app:layout_constraintTop_toBottomOf="@id/imageBack" />
 
-    <TextView
-        android:id="@+id/textAvailability"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/green"
-        android:padding="@dimen/_2sdp"
-        android:text="@string/online"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_10ssp"
-        android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@+id/viewSupporter" />
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatRecyclerView"
@@ -100,7 +88,7 @@
         android:visibility="gone"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="@+id/viewBackground"
-        app:layout_constraintTop_toBottomOf="@id/textAvailability"
+        app:layout_constraintTop_toBottomOf="@id/viewSupporter"
         app:stackFromEnd="true" />
 
     <ProgressBar
@@ -156,5 +144,17 @@
         app:layout_constraintEnd_toStartOf="@id/layoutSend"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/textAvailability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="@string/online"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/viewSupporter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
